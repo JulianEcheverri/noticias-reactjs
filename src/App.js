@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import Header from './components/Header'
+import ListaNoticias from './components/ListaNoticias'
 
 //pagina para la api
 // https://newsapi.org/
@@ -45,7 +46,9 @@ class App extends Component {
           titulo = 'Noticias React API'
         />
         <div className="container white contenedor-noticias">
-
+            <ListaNoticias
+                noticias = {this.state.noticias}
+            />
         </div>
       </Fragment>
     )
